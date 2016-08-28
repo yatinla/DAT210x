@@ -1,3 +1,12 @@
 This is a fork of the actual DAT210X github repo with notebooks of my own added.
 
+SSH ISSUES
+-----------
+
+If you look at .git/config you will see that the repo URL is given
+as git@yatinla rather than git@github.com.  This is an ssh alias
+which is in ~/.ssh/config and causes ssh to use the public key in
+yatinla.pub.  Otherwise it will use the id_rsa.pub key which is
+already tied to the mt-jh-ml github account.  
+
 
