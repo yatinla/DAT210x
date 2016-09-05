@@ -2,8 +2,6 @@ import pandas as pd
 import numpy as np
 import scipy.io
 import random, math
-from sklearn.decomposition import PCA
-from sklearn.manifold import Isomap
 
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
@@ -54,10 +52,7 @@ for i in range(num_images):
 # y is the principal component you want displayed on the y-axis, Can be 1 or 2
 #
 # .. your code here ..
-pca = PCA(n_components=3)
-pca.fit(df)
-T = pca.transform(df)
-Plot2D(T, "2D Projections of 3 Component PCA", 0, 1)
+
 
 #
 # TODO: Implement Isomap here. Reduce the dataframe df down
@@ -65,10 +60,6 @@ Plot2D(T, "2D Projections of 3 Component PCA", 0, 1)
 # the first two components.
 #
 # .. your code here ..
-iso = Isomap(n_components=3)
-iso.fit(df)
-T = iso.transform(df)
-Plot2D(T, "2D Projections of 3 Component Isomap", 0, 1)
 
 
 #
